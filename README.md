@@ -10,6 +10,9 @@ The main code is located in the `spec.cy.js` file. This file contains a series o
 
 Due to the same-origin policy (CORS) implemented in web browsers, Cypress cannot directly interact with elements within an iframe that is on a different domain. This is a known limitation of Cypress and can cause errors when running the script. For this reason, the code gives an error when looking for the element `cy.wrap(iframe.find('input[data-fieldtype="encryptedCardNumber"]')).type(encryptedCardNumber);`.
 I tried several solutions, such as waiting for the iframe to load completely and verifying that the selectors of the elements are correct. However, these solutions have not solved the problem due to the same-origin policy.
+
+## Altenatives
+
 There are alternative solutions such as: configuring a proxy server so that the iframe content appears to come from the same origin with Burpsuite, or simulating user actions by sending the corresponding events. However, these solutions can be complicated to implement and may not be the best option for a test.
 The most viable option would be the use of a different testing tool that does not have this limitation, such as Selenium. However, this would require a significant change in the approach to testing and I have no experience with Selenium, I can learn it if necessary.
 
