@@ -1,0 +1,10 @@
+{
+  "origin": "Ciudad de México Auditorio Nacional",
+  "destination": "León Centro Max Hotsson Smart",
+  "name": "John",
+  "last_name": "Doe",
+  "email": "John@reservamos.com",
+  "card_number": "2222 4000 7000 0005",
+  "card_expiration": "03/30",
+  "card_cvc": "737"
+}
