@@ -1,0 +1,8 @@
+# Dependencies
+package-lock.json
+node_modules/
+
+# Multimedia
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/

@@ -1,0 +1,23 @@
+{
+  "name": "reservamos-test-cy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victor-gp99/Reservemos-test-cy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victor-gp99/Reservemos-test-cy/issues"
+  },
+  "homepage": "https://github.com/victor-gp99/Reservemos-test-cy#readme",
+  "devDependencies": {
+    "cypress": "^13.7.2"
+  }
+}
