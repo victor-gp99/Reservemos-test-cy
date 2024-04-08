@@ -41,7 +41,7 @@ describe('Code Challenge: Simple purchases', function() {
     cy.get('button.main-button').click({force:true});
   }
   //Here we are using the window object to stub the postMessage function that is used to communicate with the Adyen iframe but the 
-  //CORS policy is blocking the communication
+  //CORS policy is blocking the communication because the origin of the iframe is different from the origin of the parent window
   function fillPaymentMethod(encryptedCardNumber, encryptedExpiryDate, encryptedSecurityCode, name, lastName) {
     cy.wait(10000);
     cy.get('input#check-passengers').check({force:true});
